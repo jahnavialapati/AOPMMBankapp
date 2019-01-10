@@ -33,10 +33,8 @@ public class SavingsAccountSJDAOImpl implements SavingsAccountDAO{
 	 
 
 	@Override
-	public SavingsAccount getAccountById(int accountNumber){
-		return jdbcTemplate.queryForObject("SELECT * FROM ACCOUNT WHERE account_id=?", new Object[] {accountNumber},new SavingAccountMapper());
-		
-				  
+	public SavingsAccount getAccountById(int accountNumber){	
+		return jdbcTemplate.queryForObject("SELECT * FROM ACCOUNT WHERE account_id=?", new Object[] {accountNumber},new SavingAccountMapper());			  
 	}
 	
 	@Override

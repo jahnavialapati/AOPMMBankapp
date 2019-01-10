@@ -1,10 +1,8 @@
 package com.mycompany.app.service;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import com.mycompany.app.account.SavingsAccount;
-import com.mycompany.app.exception.AccountNotFoundException;
 
 public interface SavingsAccountService {
 

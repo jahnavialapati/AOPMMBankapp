@@ -8,8 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.mycompany.app.account.SavingsAccount;
 import com.mycompany.app.dao.SavingsAccountDAO;
-import com.mycompany.app.exception.InsufficientFundsException;
-import com.mycompany.app.exception.InvalidInputException;
 import com.mycompany.app.factory.AccountFactory;
 @Service
 public class SavingsAccountServiceImpl implements SavingsAccountService {

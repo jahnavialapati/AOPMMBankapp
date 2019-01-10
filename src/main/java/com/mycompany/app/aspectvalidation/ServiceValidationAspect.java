@@ -20,7 +20,7 @@ public class ServiceValidationAspect {
 		 SavingsAccount account=(SavingsAccount)params[0];
 		double currentBalance=account.getBankAccount().getAccountBalance();
 		 if ((Double)params[1]> 0 && currentBalance>(Double)params[1]) {
-			 logger.info("amount is withdrawing");
+			 logger.info("amount is withdrawn");
 			 pjp.proceed();
 		 }
 		 else {
